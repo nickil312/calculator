@@ -3,96 +3,122 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace Prog
+namespace Prackticheskai_2
 {
+
     internal class Program
     {
-        static void Main(string[] args)
+
+        //выбор функции пользователем
+        static void Main()
         {
-            bool done = false;
-            while (!done)
+            Console.WriteLine("Введите приложение\n Игра 'Угадай число'\n Таблица умножения\n Вывод делителей числа");
+            int a = int.Parse(Console.ReadLine());
+            switch (a)
             {
-                float gg1;
-                float gg2;
-                Console.WriteLine("Введите номер операции");
-                int act = int.Parse(Console.ReadLine());
-                if (act == 9)
-                {
-                    Console.WriteLine("Работа калькулятора закончена");
-                    Thread.Sleep(5000);
-                    done = true;
-                    
-                }
-                switch (act)
-                {
-                    case 1:
-                        Console.WriteLine("Введите 1 число");
-                        gg1 = float.Parse(Console.ReadLine());
-                        Console.WriteLine("Введите 2 число");
-                        gg2 = float.Parse(Console.ReadLine());
-                        Console.WriteLine($"Сложение 1 числа и 2 числа = {gg1 + gg2}");
-                        break;
-                    case 2:
-                        Console.WriteLine("Введите 1 число");
-                        gg1 = float.Parse(Console.ReadLine());
-                        Console.WriteLine("Введите 2 число");
-                        gg2 = float.Parse(Console.ReadLine());
-                        Console.WriteLine($"Вычитание 1 числа из 2 числа = {gg1 + gg2}");
-                        break;
-                    case 3:
-                        Console.WriteLine("Введите 1 число");
-                        gg1 = float.Parse(Console.ReadLine());
-                        Console.WriteLine("Введите 2 число");
-                        gg2 = float.Parse(Console.ReadLine());
-                        Console.WriteLine($"Умножение 2 чисел = {gg1 * gg2}");
-                        break;
-                    case 4:
-                        Console.WriteLine("Введите 1 число");
-                        gg1 = float.Parse(Console.ReadLine());
-                        Console.WriteLine("Введите 2 число");
-                        gg2 = float.Parse(Console.ReadLine());
-                        Console.WriteLine($"Деление 1 числа на 2 число = {gg1 / gg2}");
-                        break;
-                    case 5:
-                        Console.WriteLine("Введите 1 число");
-                        gg1 = float.Parse(Console.ReadLine());
-                        Console.WriteLine("Введите 2 число");
-                        gg2 = float.Parse(Console.ReadLine());
-                        Console.WriteLine($"Возведение 1 числа в степень = {Math.Pow(gg1, gg2)}");
-                        break;
-                    case 6:
-                        Console.WriteLine("Введите 1 число");
-                        gg1 = float.Parse(Console.ReadLine());
-                        Console.WriteLine("Введите 2 число");
-                        gg2 = float.Parse(Console.ReadLine());
-                        Console.WriteLine($" 1 число ставим в кв. корень = {Math.Sqrt(gg1)}");
-                        break;
-                    case 7:
-                        Console.WriteLine("Введите 1 число");
-                        gg1 = float.Parse(Console.ReadLine());
-                        Console.WriteLine("Введите 2 число");
-                        gg2 = float.Parse(Console.ReadLine());
-                        Console.WriteLine($"Находим 1% от 1 числа = {gg1 / 100}");
-                        break;
-                    case 8:
-                        Console.WriteLine("Введите 1 число");
-                        gg1 = float.Parse(Console.ReadLine());
-                        Console.WriteLine("Введите 2 число");
-                        gg2 = float.Parse(Console.ReadLine());
-                        Console.WriteLine($"Находим факториал числа");
-                        int an = 1;
-                        float n = gg1;
-                        for (int i = 1; i <= n; i++)
-                            an *= i;
-                        Console.WriteLine($"Результат {an}"); break;
-                        break;
-                }
+                case 1:
+                    Console.WriteLine("Вы выбрали игру");
+                    n();
+                    break;
+                case 2:
+                    Console.WriteLine("Вы выбрали таблицу умножения");
+                    b();
+                    break;
+                case 3:
+                    Console.WriteLine("Вы выбрали вывод делителей числа");
+                    hey();
+                    break;
 
             }
+            static void n()
+            {
+                //Создание объекта для генерации чисел
+                Random rnd = new Random();
+
+                //Получить случайное число (в диапазоне от 0 до 10)
+                int value = rnd.Next(0, 100);
+                int i = value;
+                int a;
+                do
+                {
+                    Console.WriteLine("Введите чиcло");
+                    a = int.Parse(Console.ReadLine());
+                    if (i != a)
+                    {
+                       
+                        if (i > a)
+                        {
+                            Console.WriteLine("Больше");
+                        }
+                        if (i < a)
+                        {
+                            Console.WriteLine("Меньше");
+                        }
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("Молодец, нашел");
+                    }
+                }
+                while (a != value);
 
 
+            }
+            static void b()
+            {
+                Console.WriteLine("Таблица умножения: ");
 
+                while (true)
+                {
+                    int[,] q = new int[9, 9]
+                    {
+                        {1,2,3,4,5,6,7,8,9},
+                        {2,4,6,8,10,12,14,16,18},
+                        {3,6,9,12,15,18,21,24,27},
+                        {4,8,12,16,20,24,28,32,36},
+                        {5,10,15,20,25,30,35,40,45},
+                        {6,12,18,24,30,36,42,48,54},
+                        {7,14,21,28,35,42,49,56,63},
+                        {8,16,24,32,40,48,56,64,72},
+                        {9,18,27,36,45,54,64,72,81}
+                    };
+                    for (int m = 0; m < q.GetLength(0); m++)
+                    {
+                        for (int n = 0; n < q.GetLength(1); n++)
+                        {
+                            if (q[m, n] < 10)
+                            {
+                                Console.Write(q[m, n] + "  | ");
+                            }
+                            else
+                            {
+                                Console.Write(q[m, n] + " | ");
+                            }
+                        }
+                        Console.WriteLine();
+                    }
+                    Thread.Sleep(5000);
+                    break;
+                }
+            }
+
+            static void hey()
+            {
+
+                Console.WriteLine("Введите чиcло");
+                int a = Convert.ToInt32(Console.ReadLine());
+                for (int i = a; i > 0; i--)
+                {
+                    {
+                        if (a % i == 0)
+                        {
+                            Console.Write(a / i + " / ");
+                        }
+                    }
+                }
+                Thread.Sleep(5000);
+            }
         }
     }
 }
