@@ -30,7 +30,7 @@ namespace Practicheskai_4
         {
             if (Programm.position == 1 && presskey.Key == ConsoleKey.Enter)
             {
-                Console.Clear();
+                
                 
                 if (Programm.xposition == 0)
                 {
@@ -46,10 +46,7 @@ namespace Practicheskai_4
                         Programm.xposition++;
                         hey(presskey2);
                     }
-                    else
-                    {
-                        Console.WriteLine("program gg"); 
-                    }
+                    
                 }
                 
 
@@ -58,7 +55,7 @@ namespace Practicheskai_4
                     Console.Clear();
                     foreach (string text0 in text2)
                     {
-                        Console.WriteLine(text2);
+                        Console.WriteLine(text0);
                     }
                     Console.WriteLine(dateTime2);
                     ConsoleKeyInfo presskey3 = Console.ReadKey();
