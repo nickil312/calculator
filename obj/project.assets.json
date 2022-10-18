@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Nickill/Projects/Prog/Prog/Prog.csproj",
-      "projectName": "Prog",
-      "projectPath": "/Users/Nickill/Projects/Prog/Prog/Prog.csproj",
+      "projectUniqueName": "/Users/Nickill/Projects/Practicheskai_4/Practicheskai_4/Practicheskai_4.csproj",
+      "projectName": "Practicheskai_4",
+      "projectPath": "/Users/Nickill/Projects/Practicheskai_4/Practicheskai_4/Practicheskai_4.csproj",
       "packagesPath": "/Users/Nickill/.nuget/packages/",
-      "outputPath": "/Users/Nickill/Projects/Prog/Prog/obj/",
+      "outputPath": "/Users/Nickill/Projects/Practicheskai_4/Practicheskai_4/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/Nickill/.nuget/NuGet/NuGet.Config"
