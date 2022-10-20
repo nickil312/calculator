@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Threading;
-using Practicheskai_4;
-
-namespace Practicheskai_4
+﻿namespace Practicheskai_4
 
 {
     public class Programm
@@ -14,7 +6,7 @@ namespace Practicheskai_4
         public static int position = 1;
         public static int xposition = 0;
         public static DateTime selectedDate = DateTime.Now;
-        
+
         static void Main()
         {
             Soul gg1 = new Soul()
@@ -69,9 +61,9 @@ namespace Practicheskai_4
             // нач текст без стрелки 
 
             ConsoleKeyInfo key = Console.ReadKey();
-           // считывает нажания
-            
-          
+            // считывает нажания
+
+
             while (key.Key != ConsoleKey.Escape)
             {
 
@@ -85,14 +77,7 @@ namespace Practicheskai_4
                     position--;
 
                 }
-                if (position < 1)
-                {
-                    position = 1;
-                }
-                if (position > 6)
-                {
-                    position = 1;
-                }
+
                 if (key.Key == ConsoleKey.RightArrow)
                 {
                     xposition++;
@@ -103,44 +88,30 @@ namespace Practicheskai_4
                     xposition--;
 
                 }
+                if (position < 1)
+                {
+                    position = 1;
+                }
+                if (position > 6)
+                {
+                    position = 1;
+                }
                 Console.Clear();
                 Console.SetCursorPosition(2, 0);
-                Console.WriteLine("Выбрана дата " + selectedDate.AddDays(xposition).Day +"." + selectedDate.AddDays(xposition).Month);
-                    selectedDate = selectedDate.AddDays(xposition);
-                foreach (Soul item in Soul.souls)
-                {
-
-                    if (item.SoulDay == selectedDate.Day)
-                    {
-                        
-                        Console.WriteLine(item.name);
-
-                    }
-                }
+                Console.WriteLine($"Выбрана дата: " + selectedDate.AddDays(xposition).Day + "." + selectedDate.AddDays(xposition).Month);
                 Console.SetCursorPosition(0, position);
                 Console.WriteLine($"->");
-               
-                
-
-                //autput(key,selectedDate);
+                autput(key, selectedDate);
                 key = Console.ReadKey();
-                
 
-                
-                
-                        
-
-
-                    
-                }
-                
-                
             }
+
+
+        }
 
         public static void autput(ConsoleKeyInfo upanddown, DateTime selectedDate)
         {
-            
-            
+            selectedDate = selectedDate.AddDays(xposition);
             if (upanddown.Key == ConsoleKey.Enter)
             {
                 Console.Clear();
@@ -148,10 +119,6 @@ namespace Practicheskai_4
 
                 foreach (Soul item in Soul.souls)
                 {
-
-                    
-                    
-                    
 
                     if (item.SoulDay == selectedDate.Day)
                     {
@@ -168,12 +135,25 @@ namespace Practicheskai_4
                     //}
                 }
             }
+            if (upanddown.Key != ConsoleKey.Enter)
+            {
+                Console.SetCursorPosition(2, 1);
 
+                int o = 1;
+                foreach (Soul item in Soul.souls)
+                {
+                    if (item.SoulDay == selectedDate.Day)
+                    {
+                        Console.WriteLine(" " + o + "." + item.name);
+                        o++;
+                    }
+                }
+            }
 
 
         }
 
-    
+
     }
 }
 
