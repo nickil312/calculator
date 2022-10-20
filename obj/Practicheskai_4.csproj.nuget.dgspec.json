@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Nickill/Projects/Practicheskai_4/Practicheskai_4/Practicheskai_4.csproj": {}
+    "/Users/Nickill/Projects/Prog/Practicheskai_4.csproj": {}
   },
   "projects": {
-    "/Users/Nickill/Projects/Practicheskai_4/Practicheskai_4/Practicheskai_4.csproj": {
+    "/Users/Nickill/Projects/Prog/Practicheskai_4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Nickill/Projects/Practicheskai_4/Practicheskai_4/Practicheskai_4.csproj",
+        "projectUniqueName": "/Users/Nickill/Projects/Prog/Practicheskai_4.csproj",
         "projectName": "Practicheskai_4",
-        "projectPath": "/Users/Nickill/Projects/Practicheskai_4/Practicheskai_4/Practicheskai_4.csproj",
+        "projectPath": "/Users/Nickill/Projects/Prog/Practicheskai_4.csproj",
         "packagesPath": "/Users/Nickill/.nuget/packages/",
-        "outputPath": "/Users/Nickill/Projects/Practicheskai_4/Practicheskai_4/obj/",
+        "outputPath": "/Users/Nickill/Projects/Prog/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/Nickill/.nuget/NuGet/NuGet.Config"
