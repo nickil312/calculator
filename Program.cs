@@ -39,7 +39,7 @@ namespace Practicheskai_4
             {
                 name = "Прийти на пары в дистанте",
                 description = "С 2 по 4 пару",
-                SoulDay = new DateTime(2022, 10, 12).Day,
+                SoulDay = new DateTime(2022, 10, 22).Day,
             };
             Soul gg5 = new Soul()
             {
@@ -69,11 +69,10 @@ namespace Practicheskai_4
             // нач текст без стрелки 
 
             ConsoleKeyInfo key = Console.ReadKey();
-            //считывается кнопка (стрелка вниз/вверх)
-            ConsoleKeyInfo a = Console.ReadKey();
-            //считывается кнопка (esc для заканчивания программы)
+           // считывает нажания
+            
           
-            while (a.Key != ConsoleKey.Escape)
+            while (key.Key != ConsoleKey.Escape)
             {
 
                 if (key.Key == ConsoleKey.DownArrow)
@@ -94,19 +93,37 @@ namespace Practicheskai_4
                 {
                     position = 1;
                 }
+                if (key.Key == ConsoleKey.RightArrow)
+                {
+                    xposition++;
+
+                }
+                else if (key.Key == ConsoleKey.LeftArrow)
+                {
+                    xposition--;
+
+                }
                 Console.Clear();
                 Console.SetCursorPosition(2, 0);
-                Console.WriteLine("Выбрана дата");
-                Console.WriteLine("  1: Прийти на пары");
-                Console.WriteLine("  2: Сделать практические");
-                Console.WriteLine("  3: Купить продукты");
+                Console.WriteLine("Выбрана дата " + selectedDate.AddDays(xposition).Day +"." + selectedDate.AddDays(xposition).Month);
+                    selectedDate = selectedDate.AddDays(xposition);
+                foreach (Soul item in Soul.souls)
+                {
+
+                    if (item.SoulDay == selectedDate.Day)
+                    {
+                        
+                        Console.WriteLine(item.name);
+
+                    }
+                }
                 Console.SetCursorPosition(0, position);
-                Console.WriteLine($"{selectedDate.Day}>");
-                key = Console.ReadKey();
+                Console.WriteLine($"->");
                
                 
 
-                autput(key,selectedDate);
+                //autput(key,selectedDate);
+                key = Console.ReadKey();
                 
 
                 
@@ -123,7 +140,7 @@ namespace Practicheskai_4
         public static void autput(ConsoleKeyInfo upanddown, DateTime selectedDate)
         {
             
-            Console.WriteLine("jgjgjfd`jfoajsdf");
+            
             if (upanddown.Key == ConsoleKey.Enter)
             {
                 Console.Clear();
@@ -132,12 +149,14 @@ namespace Practicheskai_4
                 foreach (Soul item in Soul.souls)
                 {
 
+                    
+                    
+                    
 
-
-                    selectedDate = selectedDate.AddDays(xposition);
                     if (item.SoulDay == selectedDate.Day)
                     {
-                        Console.WriteLine("  " + item.name);
+                        Console.WriteLine("=================>");
+                        Console.WriteLine(item.description);
 
                     }
 
