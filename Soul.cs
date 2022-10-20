@@ -7,7 +7,7 @@ namespace Practicheskai_4
         public static List<Soul> souls = new List<Soul>();
         public string name;
         public string description;
-        public DateTime SoulDay;
+        public int SoulDay;
 
 
         
