@@ -47,9 +47,9 @@
             };
             Soul gg7 = new Soul()
             {
-                name = "gg",
-                description = "Сделать 1 и 2",
-                SoulDay = new DateTime(2022, 10, 14).Day,
+                name = "Сделать практическую по философии",
+                description = "Сделать на тему МФ",
+                SoulDay = new DateTime(2022, 10, 25).Day,
             };
             Soul.souls.Add(gg1);
             Soul.souls.Add(gg2);
