@@ -37,13 +37,13 @@
             {
                 name = "Сделать практические (оч много)",
                 description = "Сделать 1 и 2",
-                SoulDay = new DateTime(2022, 10, 14).Day,
+                SoulDay = new DateTime(2022, 10, 23).Day,
             };
             Soul gg6 = new Soul()
             {
                 name = "Сделать практические по питону",
                 description = "Доделать 1 и сделать 2",
-                SoulDay = new DateTime(2022, 10, 14).Day,
+                SoulDay = new DateTime(2022, 10, 24).Day,
             };
             Soul gg7 = new Soul()
             {
