@@ -3,40 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-namespace Prackticheskai_2
+namespace pr2
 {
 
     internal class Program
     {
 
-        //выбор функции пользователем
+
         static void Main()
         {
-            Console.WriteLine("Введите приложение\n Игра 'Угадай число'\n Таблица умножения\n Вывод делителей числа");
-            int a = int.Parse(Console.ReadLine());
-            switch (a)
+            static void guessthenumber()
             {
-                case 1:
-                    Console.WriteLine("Вы выбрали игру");
-                    n();
-                    break;
-                case 2:
-                    Console.WriteLine("Вы выбрали таблицу умножения");
-                    b();
-                    break;
-                case 3:
-                    Console.WriteLine("Вы выбрали вывод делителей числа");
-                    hey();
-                    break;
-
-            }
-            static void n()
-            {
-                //Создание объекта для генерации чисел
-                Random rnd = new Random();
-
-                //Получить случайное число (в диапазоне от 0 до 10)
-                int value = rnd.Next(0, 100);
+                Random randomnumber = new Random();
+                int value = randomnumber.Next(0, 100);
                 int i = value;
                 int a;
                 do
@@ -45,7 +24,7 @@ namespace Prackticheskai_2
                     a = int.Parse(Console.ReadLine());
                     if (i != a)
                     {
-                       
+
                         if (i > a)
                         {
                             Console.WriteLine("Больше");
@@ -63,9 +42,8 @@ namespace Prackticheskai_2
                 }
                 while (a != value);
 
-
             }
-            static void b()
+            static void tablicha()
             {
                 Console.WriteLine("Таблица умножения: ");
 
@@ -89,21 +67,20 @@ namespace Prackticheskai_2
                         {
                             if (q[m, n] < 10)
                             {
-                                Console.Write(q[m, n] + "  | ");
+                                Console.Write(q[m, n] + "  /|/ ");
                             }
                             else
                             {
-                                Console.Write(q[m, n] + " | ");
+                                Console.Write(q[m, n] + " /|/ ");
                             }
                         }
                         Console.WriteLine();
                     }
-                    Thread.Sleep(5000);
                     break;
+                    
                 }
             }
-
-            static void hey()
+            static void numberdelitel()
             {
 
                 Console.WriteLine("Введите чиcло");
@@ -117,8 +94,46 @@ namespace Prackticheskai_2
                         }
                     }
                 }
-                Thread.Sleep(5000);
+                
             }
+            static void startprogramm()
+            {
+                Console.WriteLine(" Введите номер программы\n " +
+                    "1.Игра 'Угадай число'\n " +
+                    "2.Таблица умножения\n " +
+                    "3.Вывод делителей числа\n " +
+                    "4.Для выхода из программы введите 4");
+                
+                int a = Convert.ToInt32(Console.ReadLine());
+                if (a == 1)
+                {
+                    Console.WriteLine("Вы выбрали игру угадай число");
+                    guessthenumber();
+                }
+                if (a == 2)
+                {
+                    Console.WriteLine("Вы выбрали таблицу умножения");
+                    tablicha();
+                }
+                if (a == 3)
+                {
+                    Console.WriteLine("Вы выбрали программу по определителю делителей числа");
+                    numberdelitel();
+                }
+                if (a == 4)
+                {
+                    Console.WriteLine("Вы вышли");
+                    Environment.Exit(0); 
+                }
+                else
+                {
+                    Console.WriteLine("Введите числа из списка(1-4)");
+                    Thread.Sleep(500);
+                    Console.Clear();
+                    startprogramm();
+                }
+            }
+            startprogramm();
         }
     }
 }
