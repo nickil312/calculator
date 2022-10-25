@@ -33,9 +33,12 @@ namespace Tortics
         static void Main()
         {
             var a = OrderDecor(12, size: 13);
+            Console.ForegroundColor = ConsoleColor.Magenta;
             Console.WriteLine($"Размер торта {a.Amount}" +
                 $"\n Количество декора {a.Decor.Amount}" +
-                $"\n {a.Decor.Color}");
+                $"\n Цвет декора{a.Decor.Color}" +
+                $"\n Вид декора{a.Decor.View}" +
+                $"\n Размер декора{a.Decor.Size}");
             Console.ReadKey();
         }
     }
