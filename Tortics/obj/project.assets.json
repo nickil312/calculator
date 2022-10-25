@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Nickill/Projects/Git/Prog/Prog.csproj",
-      "projectName": "Prog",
-      "projectPath": "/Users/Nickill/Projects/Git/Prog/Prog.csproj",
+      "projectUniqueName": "/Users/Nickill/Projects/Git/Prog/Tortics.csproj",
+      "projectName": "Tortics",
+      "projectPath": "/Users/Nickill/Projects/Git/Prog/Tortics.csproj",
       "packagesPath": "/Users/Nickill/.nuget/packages/",
       "outputPath": "/Users/Nickill/Projects/Git/Prog/obj/",
       "projectStyle": "PackageReference",
