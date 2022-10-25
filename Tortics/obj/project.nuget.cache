@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Xyir80zixAnPnwwgdy7xdSaDkoVNM3uKP3WDUmAssD1TpArZF4X4SvrnfaBG1bsnQjkEvxftvj7owA+UQtZDiA==",
+  "dgSpecHash": "kLpGxV8kOCtk6u6nx7AJMk+iXpRgxVG4qtBZCVCLIWXTaSIhkjwN9PI7YHWPrXA2lR65Fjy8MnrCsYwVcrhiWg==",
   "success": true,
-  "projectFilePath": "/Users/Nickill/Projects/Git/Prog/Tortics.csproj",
+  "projectFilePath": "/Users/Nickill/Projects/Git/Tortics/Tortics.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

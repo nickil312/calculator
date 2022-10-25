@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Nickill/Projects/Git/Prog/Tortics.csproj",
+      "projectUniqueName": "/Users/Nickill/Projects/Git/Tortics/Tortics.csproj",
       "projectName": "Tortics",
-      "projectPath": "/Users/Nickill/Projects/Git/Prog/Tortics.csproj",
+      "projectPath": "/Users/Nickill/Projects/Git/Tortics/Tortics.csproj",
       "packagesPath": "/Users/Nickill/.nuget/packages/",
-      "outputPath": "/Users/Nickill/Projects/Git/Prog/obj/",
+      "outputPath": "/Users/Nickill/Projects/Git/Tortics/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/Nickill/.nuget/NuGet/NuGet.Config"
