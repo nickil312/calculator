@@ -3,17 +3,19 @@ namespace Tortics
 {
     public class Decor
     {
-        public Decor(int amount = 0, string view = "", string color = "", int size = 1)
+        public Decor() { }
+
+        public Decor(int amount, string view, string color, int size)
         {
-            int Amount = amount;
-            string View = view;
-            string Color = color;
-            int Size = size;
+            this.Amount = amount;
+            this.View = view;
+            this.Color = color;
+            this.Size = size;
         }
-        int Amount = 0;
-        string View = "";
-        string Color = "";
-        int Size = 1;
+        readonly public int Amount = 0;
+        readonly public string View = "";
+        readonly public string Color = "";
+        readonly public int Size = 1;
 
     }
 }
