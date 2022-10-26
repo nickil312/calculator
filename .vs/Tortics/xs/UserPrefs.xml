@@ -1,16 +1,16 @@
 ﻿<Properties StartupConfiguration="{89AC0BA8-0D18-43C6-B426-BB8B82511868}|Default">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Tortics PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Tortics PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="Tortics/Program.cs">
     <Files>
-      <File FileName="Tortics/Program.cs" Line="20" Column="2" IsPinned="True" />
-      <File FileName="Tortics/Decor.cs" Line="11" Column="30" />
-      <File FileName="Tortics/Order.cs" Line="1" Column="1" />
+      <File FileName="Tortics/Program.cs" Line="40" Column="25" IsPinned="True" />
+      <File FileName="Tortics/Decor.cs" Line="13" Column="30" />
+      <File FileName="Tortics/Order.cs" Line="16" Column="28" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
