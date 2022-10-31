@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,17 +13,22 @@ namespace Cakes
     {
         public static int position = 1;
         public static int secondposition = 1;
-        
+        public static int thirdposition = 1;
         static void Main()
         {
-            File.Create("/Users/Nickill/Desktop/gg.txt");
+            
             int n;
             Console.WriteLine("Введите количество тортов,которые хотите купить");
             n = int.Parse(Console.ReadLine());
             for (int i = 0; i < n; i++)
             {
                 CakeDesign.Menu(position);
-                //File.AppendAllText("/Users/Nickill/Desktop/gg.txt",CakeDesign.Ck_shape);
+                var OrderObject = CakeDesign.CakeList[CakeDesign.CakeList.Count - 1];
+                string ourOrder = $"Заказ от {DateTime.Now}\n" +
+                    $"\tЗаказ: {OrderObject.shape},{OrderObject.size}\n" +
+                    $"\tЦена: {OrderObject.price}\n";
+                    
+                File.AppendAllText("/Users/Nickill/Desktop/gg.txt", ourOrder);
                 
                 //сдесь должно быть выписываение списка закказов
                 Console.Clear();
