@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Nickill/Projects/Cakes/Cakes/Cakes.csproj": {}
+    "/Users/Nickill/Projects/Git/Cakes/Cakes.csproj": {}
   },
   "projects": {
-    "/Users/Nickill/Projects/Cakes/Cakes/Cakes.csproj": {
+    "/Users/Nickill/Projects/Git/Cakes/Cakes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Nickill/Projects/Cakes/Cakes/Cakes.csproj",
+        "projectUniqueName": "/Users/Nickill/Projects/Git/Cakes/Cakes.csproj",
         "projectName": "Cakes",
-        "projectPath": "/Users/Nickill/Projects/Cakes/Cakes/Cakes.csproj",
+        "projectPath": "/Users/Nickill/Projects/Git/Cakes/Cakes.csproj",
         "packagesPath": "/Users/Nickill/.nuget/packages/",
-        "outputPath": "/Users/Nickill/Projects/Cakes/Cakes/obj/",
+        "outputPath": "/Users/Nickill/Projects/Git/Cakes/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/Nickill/.nuget/NuGet/NuGet.Config"
