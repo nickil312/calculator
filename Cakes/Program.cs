@@ -27,16 +27,19 @@ namespace Cakes
             for (int i = 0; i < n; i++)
             {
                 CakeDesign.Menu(position,thirdposition,fourthposition, sixthposition, seventhposition, eightposition);
-                var OrderObject = CakeDesign.CakeList[CakeDesign.CakeList.Count - 1];
-                string ourOrder = $"Заказ от {DateTime.Now}\n" +
-                    $"\tЗаказ: {OrderObject.shape},{OrderObject.size},{OrderObject.taste},{OrderObject.amountoflevels},{OrderObject.glaze},{OrderObject.decor}\n" +
-                    $"\tЦена: {OrderObject.price}\n";
-                    
-                File.AppendAllText("/Users/Nickill/Desktop/gg.txt", ourOrder);
-                
-                //сдесь должно быть выписываение списка закказов
-                Console.Clear();
-                
+                if (CakeDesign.CakeList.Count != 0)
+                {
+                    var OrderObject = CakeDesign.CakeList[CakeDesign.CakeList.Count - 1];
+
+                    string ourOrder = $"Заказ от {DateTime.Now}\n" +
+                        $"\tЗаказ: {OrderObject.shape},{OrderObject.size},{OrderObject.taste},{OrderObject.amountoflevels},{OrderObject.glaze},{OrderObject.decor}\n" +
+                        $"\tЦена: {OrderObject.price}\n";
+
+                    File.AppendAllText("/Users/Nickill/Desktop/gg.txt", ourOrder);
+
+                    //сдесь должно быть выписываение списка закказов
+                    Console.Clear();
+                }
                 Console.WriteLine($"Сумма заказа {CakeDesign.Ck_price}");
                 Console.WriteLine("Хотите заказать еще один тортик?\n" +
                     "1:ДА\n" +
