@@ -1,0 +1,11 @@
+﻿using System;
+namespace pr6
+{
+    public class Filefile
+    {
+        public Filefile()
+        {
+        }
+    }
+}
+
