@@ -1,0 +1,14 @@
+﻿using System;
+namespace pr7
+{
+	public class Getbackmydirsandfiles
+	{
+		public DirectoryInfo[] dirs;
+		public FileInfo[] files; 
+		public Getbackmydirsandfiles()
+		{
+
+		}
+	}
+}
+

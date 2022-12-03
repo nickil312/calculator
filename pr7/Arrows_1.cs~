@@ -1,0 +1,40 @@
+﻿using System;
+namespace pr7
+{
+    public class Arrows_1
+    {
+        public void Moving_Arrows()
+        {
+            ConsoleKeyInfo key = Console.ReadKey();
+            while (key.Key != ConsoleKey.Enter)
+            {
+                Console.SetCursorPosition(0, Programm.position - 1);
+                Console.WriteLine("  ");
+                Console.SetCursorPosition(0, Programm.position + 1);
+                Console.WriteLine("  ");
+                Console.SetCursorPosition(0, Programm.position);
+                Console.WriteLine($"-{Programm.position}");
+                Console.ReadKey();
+                if (key.Key == ConsoleKey.DownArrow)
+                {
+                    Programm.position++;
+
+                }
+                else if (key.Key == ConsoleKey.UpArrow)
+                {
+                    Programm.position--;
+
+                }
+                if (Programm.position < 1)
+                {
+                    Programm.position = 6;
+                }
+                if (Programm.position > 6)
+                {
+                    Programm.position = 1;
+                }
+            }
+        }
+    }
+}
+
