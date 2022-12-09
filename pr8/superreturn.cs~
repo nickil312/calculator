@@ -1,0 +1,12 @@
+﻿using System;
+namespace pr8
+{
+	public class superreturn
+	{
+
+		public superreturn()
+		{
+		}
+	}
+}
+

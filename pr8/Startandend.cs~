@@ -1,0 +1,51 @@
+﻿using System;
+using System.Reflection.Emit;
+using System.Runtime.Intrinsics.X86;
+using Newtonsoft.Json;
+
+namespace pr8
+{
+	public class Startandend
+	{
+        public string name;
+        public int csim;
+        public int csis;
+        public static int timesec = 5;
+        static public List<Startandend> DreamBoard = new List<Startandend>();
+        public Startandend()
+        {
+        }
+        public Startandend(string name, int csim, int csis)
+        {
+            this.name = name;
+            this.csim = csim;
+            this.csis = csis;
+            
+        }
+
+        public static void Start()
+		{
+            Console.WriteLine("Таблица рекордов");
+            File.WriteAllText("/Users/Nickill/Desktop/файлы для с/dop.json", JsonConvert.SerializeObject(DreamBoard)) ;
+            foreach(var item in DreamBoard)
+            {
+                Console.WriteLine(item.name);
+                Console.WriteLine(item.csim);
+                Console.WriteLine(item.csis);
+            }
+            Console.WriteLine("Нажмите F1,чтобы начать тест на скоропечатание");
+            ConsoleKeyInfo key = Console.ReadKey();
+
+            if (key.Key == ConsoleKey.F1)
+            {
+                Console.WriteLine("Тест скоро начнеться");
+
+                while (timesec != 0)
+                {
+                    Console.WriteLine(timesec-1);
+                }
+            }
+        }
+	}
+}
+

@@ -1,0 +1,33 @@
+﻿using System;
+using static System.Net.Mime.MediaTypeNames;
+
+namespace pr8
+{
+	public class Doublefunction
+	{
+		public Doublefunction()
+		{
+			int x = 10;
+			Thread text = new Thread(_ =>
+			{
+				const string text = ("Привет, тут пишется текст, который настолько интеремен для написания, " +
+					"что использует практически одни и те же буквы, а теперь будет текст на все буквы, кроме ж "+
+                    "съешь ещё этих мягких французских булок, да выпей чаю, вот и как раз это и был наш текст," +
+					"ну что успел написать или нет?? я думаю да так, как текст вроде как маленький и я задолбал запятыми, да ?");
+                char[] numbertext = text.ToCharArray();
+                ConsoleKeyInfo checkkey;
+                do
+                {
+                    Console.Clear();
+                    Console.WriteLine(text);
+                    Console.SetCursorPosition(0, 8);
+                    Console.WriteLine("Время для прочтения текста, чтобы начать тестирование нажмите Enter");
+                    checkkey = Console.ReadKey();
+                } while (checkkey.Key != ConsoleKey.Enter);
+                Console.Clear();
+                Console.WriteLine(text);
+            });
+		}
+	}
+}
+

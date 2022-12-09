@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "9Px4921SrHC0dA/Gh4xJkfZ/GPsKcuyYB54E1Wx1WK6xPE7fZicABP3WnkQ5hEAVqJd+7C8hCBOehGkuLdAV0Q==",
+  "success": true,
+  "projectFilePath": "/Users/Nickill/Projects/pr8/pr8/pr8.csproj",
+  "expectedPackageFiles": [
+    "/Users/Nickill/.nuget/packages/newtonsoft.json/13.0.2/newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

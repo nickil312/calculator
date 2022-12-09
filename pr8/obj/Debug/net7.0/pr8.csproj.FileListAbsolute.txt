@@ -1,0 +1,17 @@
+/Users/Nickill/Projects/pr8/pr8/bin/Debug/net7.0/pr8
+/Users/Nickill/Projects/pr8/pr8/bin/Debug/net7.0/pr8.deps.json
+/Users/Nickill/Projects/pr8/pr8/bin/Debug/net7.0/pr8.runtimeconfig.json
+/Users/Nickill/Projects/pr8/pr8/bin/Debug/net7.0/pr8.dll
+/Users/Nickill/Projects/pr8/pr8/bin/Debug/net7.0/pr8.pdb
+/Users/Nickill/Projects/pr8/pr8/bin/Debug/net7.0/Newtonsoft.Json.dll
+/Users/Nickill/Projects/pr8/pr8/obj/Debug/net7.0/pr8.csproj.AssemblyReference.cache
+/Users/Nickill/Projects/pr8/pr8/obj/Debug/net7.0/pr8.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Nickill/Projects/pr8/pr8/obj/Debug/net7.0/pr8.AssemblyInfoInputs.cache
+/Users/Nickill/Projects/pr8/pr8/obj/Debug/net7.0/pr8.AssemblyInfo.cs
+/Users/Nickill/Projects/pr8/pr8/obj/Debug/net7.0/pr8.csproj.CoreCompileInputs.cache
+/Users/Nickill/Projects/pr8/pr8/obj/Debug/net7.0/pr8.csproj.CopyComplete
+/Users/Nickill/Projects/pr8/pr8/obj/Debug/net7.0/pr8.dll
+/Users/Nickill/Projects/pr8/pr8/obj/Debug/net7.0/refint/pr8.dll
+/Users/Nickill/Projects/pr8/pr8/obj/Debug/net7.0/pr8.pdb
+/Users/Nickill/Projects/pr8/pr8/obj/Debug/net7.0/pr8.genruntimeconfig.cache
+/Users/Nickill/Projects/pr8/pr8/obj/Debug/net7.0/ref/pr8.dll
